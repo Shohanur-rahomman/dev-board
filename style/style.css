@@ -7,3 +7,13 @@
 body{
     background: rgb(246, 226, 230);
 }
+
+.primary-btn{
+    background: #3752FD;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+}
