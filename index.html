@@ -9,8 +9,69 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h2>hello</h2>
+<body >
+    <header class="w-11/12 mx-auto pt-6">
+        <nav class="flex justify-between h-[100px] bg-[#FFFFFF] rounded-2xl py-4 px-8">
+            <div class="flex items-center">
+                <img class="mr-3" src="./assets/logo.png" alt="logo">
+                <h2 class="text-4xl">Dev <span class="font-bold text-4xl">Board</span> </h2>
+            </div>
+            <div class="flex ">
+                <div class="bg-[#F4F7FF] flex items-center rounded-[32px] p-4">
+                    <img class="mr-3" src="./assets/checkbox.png" alt="checkbox">
+                    <h2 class="font-extrabold text-4xl">23</h2>
+                </div>
+                <button class="ml-8 bg-[#F4F7FF] p-4 rounded-full">
+                    <img src="./assets/theme-btn.png" alt="">
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="w-11/12 mx-auto">
+       <section class="py-6">
+        <div class="">
+            <section class="flex justify-between gap-4">
+                <!-- box 1 -->
+                <div class="flex items-center bg-[#F4F7FF] px-5 py-3 rounded-xl w-[263px]">
+                    <div class="mr-7">
+                        <img class="bg-[#FFFFFF] rounded-full p-3" src="./assets/checkbox.png" alt="">
+                    </div>
+                    <div>
+                        <h3>Task Assigned</h3>
+                        <h1 class="font-bold text-xl">6</h1>
+                    </div>
+                </div>
+                <!-- box 1 -->
+                 <!-- box 2 -->
+                <div class="rounded-xl text-[#FFFFFF] flex flex-1 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] gap-4 px-3 py-2">
+                   
+                    <div>
+                        <img src="./assets/board.png" alt="">
+                    </div>
+                    <div>
+                        <h2>Discover Something <br> New Today!</h2>
+                    </div>
+                </div>
+                <!-- box 2 -->
+                 <!-- box 3 -->
+                <div class="bg-[#F4F7FF] rounded-xl p-4 flex gap-3 w-[263px]">
+                    <img class="bg-[#FFFFFF] rounded-full p-3 w-[30%]" src="./assets/calender.png" alt="">
+                    <div>
+                        <h2>Wed ,<br>
+                        <span class="font-bold">Jul 28 2025</span></h2>
+                    </div>
+                </div>
+                <!-- box 3 -->
+            </section>
+        
+        </div>
+        <div class="">
+        
+        </div>
+       </section>
+
+    </main>
     <script src="./script/script.js"></script>
 </body>
 </html>
