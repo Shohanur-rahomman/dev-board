@@ -21,7 +21,7 @@
             <div class="flex">
                 <div class="bg-[#F4F7FF] flex items-center rounded-[32px] p-4">
                     <img class="mr-3" src="./assets/checkbox.png" alt="checkbox">
-                    <h2 class="font-extrabold text-4xl">23</h2>
+                    <h2 id="navId" class="font-extrabold text-4xl">23</h2>
                 </div>
                 <button class="ml-8 bg-[#F4F7FF] p-4 rounded-full">
                     <img src="./assets/theme-btn.png" alt="">
@@ -36,17 +36,16 @@
             <div class="col-span-3 flex flex-col gap-4">
                 <div class="flex gap-4">
                     <!-- box 1 -->
-                    <div class="bg-[#F4F7FF] flex gap-4  py-7 px-8 rounded-xl w-[263px] items-center">
+                    <div  class="bg-[#F4F7FF] flex gap-4  py-7 px-8 rounded-xl w-[263px] items-center">
                         <img class="bg-white rounded-full p-4" src="./assets/checkbox.png" alt="">
                         <div>
                             <p>Task Assigned</p>
-                            <h2 class="text-xl font-bold">05</h2>
+                            <h2 id="heroBox1Text" class="text-xl font-bold">06</h2>
                         </div>
                     </div>
                     <!-- box 1 -->
                     <!-- box 2 -->
-                    <div
-                        class="items-center flex gap-4 bg-gradient-to-r from-[#3752FD] via-[#5E7BFC] to-[#9BA8F8] text-white py-7 px-8 rounded-xl flex-1  ">
+                    <div class="items-center flex gap-4 bg-gradient-to-r from-[#3752FD] via-[#5E7BFC] to-[#9BA8F8] text-white py-7 px-8 rounded-xl flex-1  ">
                         <img src="./assets/board.png" alt="">
                         <h2>Discover Something <br> New Today!</h2>
                     </div>
@@ -56,7 +55,7 @@
                         <img class="bg-white rounded-full p-4" src="./assets/sss.png" alt="">
                         <div>
                             <h2>Wed,</h2>
-                            <h2 class="text-xl font-bold">Jul 28 2025</h2>
+                            <h2 class="text-xl font-bold" id="calender"></h2>
                         </div>
                     </div>
                     <!-- box 3 -->
@@ -66,24 +65,24 @@
                     <!-- cart 1 -->
                     <div class="bg-[#F4F7FF]  rounded-2xl  shadow-xl p-5">
                         <button class="bg-white rounded-lg py-2 px-4 ">ShopEase</button>
-                        <h2 class="mt-4 font-bold text-2xl ">Fix Mobile Button Issue</h2>
+                        <h2 id="history" class="mt-4 font-bold text-2xl " >Fix Mobile Button Issue</h2>
                         <div class="bg-white p-4 rounded-lg mt-4">
                             <p>Debug using Chrome DevTools, check for overlapping</p>
                         </div>
                         <div class="flex justify-between mt-3">
                             <h2>Deadline<br><span class="font-bold">21 March 2025</span></h2>
-                            <button class="primary-btn">Completed</button>
+                            <button id="complete" class="primary-btn">Completed</button>
                         </div>
                     </div>
                     <!-- cart 1 -->
                     <!-- cart2 -->
                     <div class="bg-[#F4F7FF]  rounded-2xl  shadow-xl p-5">
                         <button class="bg-white rounded-lg py-2 px-4 ">CloudSync</button>
-                        <h2 class="mt-4 font-bold text-2xl ">Add Dark Mode</h2>
+                        <h2 id="history" class="mt-4 font-bold text-2xl ">Add Dark Mode</h2>
                         <div class="bg-white p-4 rounded-lg mt-4">
                             <p>Store the user's preference in localStorage, update CSS variables dynamically, </p>
                         </div>
-                        <div class="flex justify-between mt-3">
+                        <div class="flex justify-between mt-3 ">
                             <h2>Deadline<br><span class="font-bold">21 March 2025</span></h2>
                             <button class="primary-btn">Completed</button>
                         </div>
@@ -92,7 +91,7 @@
                     <!-- cart 3 -->
                     <div class="bg-[#F4F7FF]  rounded-2xl  shadow-xl p-5">
                         <button class="bg-white rounded-lg py-2 px-4 ">SwiftPay</button>
-                        <h2 class="mt-4 font-bold text-2xl ">Optimize Home page </h2>
+                        <h2 id="history" class="mt-4 font-bold text-2xl ">Optimize Home page </h2>
                         <div class="bg-white p-4 rounded-lg mt-4">
                             <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works</p>
                         </div>
@@ -144,12 +143,12 @@
                 </div>
             </div>
             <!-- side bar -->
-            <div class="bg-[#F4F7FF] rounded-2xl text-center h-[100%] p-5">
-                <div class="flex items-center justify-center">
+            <div id="sideBar" class="bg-[#F4F7FF] rounded-2xl text-center h-[100%] p-5">
+                <div class="flex items-center justify-center ">
                     <img class="justify-center mr-4" src="./assets/activity.png" alt="">
                     <h2>Activity Log</h2>
                 </div>
-                <button class="primary-btn mt-6">Call History History</button>
+                <button id="side-btn" class="primary-btn2 mt-6">Call History History</button>
             </div>
             <!-- side bar -->
         </div>
