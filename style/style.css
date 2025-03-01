@@ -5,7 +5,7 @@
 }
 
 body{
-    background: rgb(246, 226, 230);
+    background: rgb(251, 246, 247);
 }
 
 .primary-btn{
@@ -22,6 +22,15 @@ body{
     color: white;
     padding-top: 8px;
     padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+}
+.primary-btn3{
+    background: #3752FD;
+    color: white;
+    padding-top: 6px;
+    padding-bottom: 4px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 8px;

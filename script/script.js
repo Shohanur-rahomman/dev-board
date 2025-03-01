@@ -59,9 +59,10 @@ const today = document.getElementById('calender').innerText = new Date().toLocal
 document.getElementById('nav-btn').addEventListener('click', function () {
     let randomColor = `rgb(${(Math.random() * 256)}, 
                            ${(Math.random() * 256)}, 
+                           ${(Math.random() * 256)}, 
                            ${(Math.random() * 256)})`;
 document.body.style.backgroundColor = randomColor;
-                        });
+ });
 
 
 
