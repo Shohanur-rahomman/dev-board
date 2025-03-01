@@ -16,15 +16,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const cartTitle = e.target.closest('.p-5').querySelector('h2').innerText;
             const historyDiv = document.createElement('div');
-            historyDiv.innerText = `
-            You have complete the task
-            ${cartTitle} ${new Date()
-                }
-            
+            historyDiv.innerHTML = `
+            <h2>Your task is done .</h2>
+            <h2>${cartTitle} .</h2> 
+           <p>${new Date().toLocaleString('en-US', {
+                dateStyle: 'full',
+                timeStyle: 'full'
+            })}</p>
             `;
             sideMenu.appendChild(historyDiv)
-            historyDiv.classList.add('bg-white', 'p-3', 'rounded-lg', 'mt-4');
+            historyDiv.classList.add('bg-white', 'p-3', 'rounded-lg', 'mt-4', 'dynamic');
 
+            document.getElementById('side-btn').addEventListener('click', function () {
+                const allItems = document.querySelectorAll('.dynamic');
+
+                if (allItems.length > 0) {
+                    for (let allItem of allItems) {
+                        allItem.remove()
+                    }
+                } 
+            });
 
             if (navCountNumber > 0) {
                 alert('board update successfully')
@@ -44,10 +55,16 @@ const today = document.getElementById('calender').innerText = new Date().toLocal
     time: 'medium'
 });
 
-// document.getElementById('side-btn').addEventListener('click', function () {
-//     const historyContainer = document.querySelector('.clear');
-//     if (historyContainer) {
-//         historyContainer.innerHTML = ''; // Clear only history content
-//     }
-// });
+
+document.getElementById('nav-btn').addEventListener('click', function () {
+    let randomColor = `rgb(${(Math.random() * 256)}, 
+                           ${(Math.random() * 256)}, 
+                           ${(Math.random() * 256)})`;
+document.body.style.backgroundColor = randomColor;
+                        });
+
+
+
+
+
 
