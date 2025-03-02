@@ -17,12 +17,10 @@ document.addEventListener('DOMContentLoaded', function () {
             const cartTitle = e.target.closest('.p-5').querySelector('h2').innerText;
             const historyDiv = document.createElement('div');
             historyDiv.innerHTML = `
-            <h2>Your task is done .</h2>
-            <h2>${cartTitle} .</h2> 
-           <p>${new Date().toLocaleString('en-US', {
-                dateStyle: 'full',
-                timeStyle: 'full'
-            })}</p>
+            <h2>Your task is done ${cartTitle} at ${new Date().toLocaleString('en-US',{
+               hour: '2-digit', 
+               minute: '2-digit'
+           })}</h2>
             `;
             sideMenu.appendChild(historyDiv)
             historyDiv.classList.add('bg-white', 'p-3', 'rounded-lg', 'mt-4', 'dynamic');
@@ -34,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     for (let allItem of allItems) {
                         allItem.remove()
                     }
-                } 
+                }
             });
 
             if (navCountNumber > 0) {
@@ -51,9 +49,17 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
-const today = document.getElementById('calender').innerText = new Date().toLocaleDateString({
-    time: 'medium'
+const today = new Date().toLocaleDateString('en-US', {
+    month: 'short',
+    year: 'numeric'
 });
+
+document.getElementById('calender').innerText = today;
+const todaySub = new Date().toLocaleDateString('en-US', {
+    weekday: 'short',
+});
+
+document.getElementById('calenderSub').innerText = todaySub;
 
 
 document.getElementById('nav-btn').addEventListener('click', function () {
@@ -61,8 +67,8 @@ document.getElementById('nav-btn').addEventListener('click', function () {
                            ${(Math.random() * 256)}, 
                            ${(Math.random() * 256)}, 
                            ${(Math.random() * 256)})`;
-document.body.style.backgroundColor = randomColor;
- });
+    document.body.style.backgroundColor = randomColor;
+});
 
 
 

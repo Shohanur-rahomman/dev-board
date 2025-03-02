@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
+<body class="my-font">
     <!-- nav -->
     <header class="w-11/12 pt-6 mx-auto ">
         <nav class="flex  h-[100px] bg-[#FFFFFF] justify-between py-4 rounded-2xl  px-8">
@@ -54,7 +54,7 @@
                     <div class="bg-[#F4F7FF] flex  py-7 px-8 items-center rounded-xl w-[263px] gap-4 ">
                         <img class="bg-white rounded-full p-4" src="./assets/sss.png" alt="">
                         <div>
-                            <h2>Wed,</h2>
+                            <h2 id="calenderSub" class="font-semibold"></h2>
                             <h2 class="text-xl font-bold" id="calender"></h2>
                         </div>
                     </div>
@@ -67,10 +67,13 @@
                         <button class="bg-white rounded-lg py-2 px-4 ">ShopEase</button>
                         <h2 id="history" class="mt-4 font-bold text-2xl " >Fix Mobile Button Issue</h2>
                         <div class="bg-white p-4 rounded-lg mt-4">
-                            <p>Debug using Chrome DevTools, check for overlapping</p>
+                            <p class="text-gray-400">My phone fell down and the power button is stuck. When I press one end, the other comes out but it is half jammed. What
+                            can I do?</p>
                         </div>
                         <div class="flex justify-between mt-3">
-                            <h2>Deadline<br><span class="font-bold">21 March 2025</span></h2>
+                            <span class="text-[#00303C]">Deadline<br>
+                                <h3 class="font-bold text-black">02 March 2025</h3>
+                            </span>
                             <button id="complete" class="primary-btn">Completed</button>
                         </div>
                     </div>
@@ -80,10 +83,13 @@
                         <button class="bg-white rounded-lg py-2 px-4 ">CloudSync</button>
                         <h2 id="history" class="mt-4 font-bold text-2xl ">Add Dark Mode</h2>
                         <div class="bg-white p-4 rounded-lg mt-4">
-                            <p>Store the user's preference in localStorage, update CSS variables dynamically, </p>
+                            <p class="text-gray-400">Switch between dark and light mode with CSS and JavaScript. Toggle Dark/Light Mode Click the button to toggle between
+                            dark and light mode.</p>
                         </div>
                         <div class="flex justify-between mt-3 ">
-                            <h2>Deadline<br><span class="font-bold">21 March 2025</span></h2>
+                            <span class="text-[#00303C]">Deadline<br>
+                                <h3 class="font-bold text-black">05 March 2025</h3>
+                            </span>
                             <button class="primary-btn">Completed</button>
                         </div>
                     </div>
@@ -93,10 +99,12 @@
                         <button class="bg-white rounded-lg py-2 px-4 ">SwiftPay</button>
                         <h2 id="history" class="mt-4 font-bold text-2xl ">Optimize Home page </h2>
                         <div class="bg-white p-4 rounded-lg mt-4">
-                            <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works</p>
+                            <p class="text-gray-400">25 March 2025 — Homepage SEO involves optimizing your homepage for search engines to rank higher and get more traffic.</p>
                         </div>
                         <div class="flex justify-between mt-3">
-                            <h2>Deadline<br><span class="font-bold">21 March 2025</span></h2>
+                        <span class="text-[#00303C]">Deadline<br>
+                            <h3 class="font-bold text-black">10 March 2025</h3>
+                        </span>
                             <button class="primary-btn">Completed</button>
                         </div>
                     </div>
@@ -106,10 +114,13 @@
                         <button class="bg-white rounded-lg py-2 px-4 ">Meta</button>
                         <h2 class="mt-4 font-bold text-2xl ">Add new emoji 🤲</h2>
                         <div class="bg-white p-4 rounded-lg mt-4">
-                            <p>Debug using Chrome DevTools, check for overlapping</p>
+                            <p class="text-gray-400">A smiley face with bags under its eyes, a paint splatter, and a human fingerprint are among the latest emojis approved
+                            for release.</p>
                         </div>
                         <div class="flex justify-between mt-3">
-                            <h2>Deadline<br><span class="font-bold">21 March 2025</span></h2>
+                            <span class="text-[#00303C]">Deadline<br>
+                                <h3 class="font-bold text-black">25 March 2025</h3>
+                            </span>
                             <button class="primary-btn">Completed</button>
                         </div>
                     </div>
@@ -119,10 +130,13 @@
                         <button class="bg-white rounded-lg py-2 px-4 ">Google LLC</button>
                         <h2 class="mt-4 font-bold text-2xl ">Integrate OpenAI API</h2>
                         <div class="bg-white p-4 rounded-lg mt-4">
-                            <p>Debug using Chrome DevTools, check for overlapping</p>
+                            <p class="text-gray-400">Integrate Agora's real-time voice communication with OpenAI's Realtime API to enable dynamic and lifelike conversational
+                            AI experiences.</p>
                         </div>
                         <div class="flex justify-between mt-3">
-                            <h2>Deadline<br><span class="font-bold">21 March 2025</span></h2>
+                            <span class="text-[#00303C]">Deadline<br>
+                                <h3 class="font-bold text-black">19 March 2025</h3>
+                            </span>
                             <button class="primary-btn">Completed</button>
                         </div>
                     </div>
@@ -132,10 +146,11 @@
                         <button class="bg-white rounded-lg py-2 px-4 ">Glassdoar</button>
                         <h2 class="mt-4 font-bold text-2xl ">Improve Job searching</h2>
                         <div class="bg-white p-4 rounded-lg mt-4">
-                            <p>Debug using Chrome DevTools, check for overlapping</p>
+                            <p class="text-gray-400">Improve your job search · We're here to help you find work · Find a job · How to search and apply for jobs on Workforce
+                            Australia · How to write </p>
                         </div>
                         <div class="flex justify-between mt-3">
-                            <h2>Deadline<br><span class="font-bold">21 March 2025</span></h2>
+                            <span class="text-[#00303C]">Deadline<br><h3 class="font-bold text-black">29 March 2025</h3></span>
                             <button class="primary-btn">Completed</button>
                         </div>
                     </div>
@@ -148,7 +163,7 @@
                     <img class="justify-center mr-4" src="./assets/activity.png" alt="">
                     <h2>Activity Log</h2>
                 </div>
-                <button id="side-btn" class="primary-btn2 mt-6">Call History History</button>
+                <button id="side-btn" class="primary-btn2 mt-6">Call History</button>
             </div>
             <!-- side bar -->
         </div>
