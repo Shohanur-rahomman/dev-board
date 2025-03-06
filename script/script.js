@@ -17,10 +17,10 @@ document.addEventListener('DOMContentLoaded', function () {
             const cartTitle = e.target.closest('.p-5').querySelector('h2').innerText;
             const historyDiv = document.createElement('div');
             historyDiv.innerHTML = `
-            <h2>Your task is done ${cartTitle} at ${new Date().toLocaleString('en-US',{
-               hour: '2-digit', 
-               minute: '2-digit'
-           })}</h2>
+            <h2>Your task is done ${cartTitle} at ${new Date().toLocaleString('en-US', {
+                hour: '2-digit',
+                minute: '2-digit'
+            })}</h2>
             `;
             sideMenu.appendChild(historyDiv)
             historyDiv.classList.add('bg-white', 'p-3', 'rounded-lg', 'mt-4', 'dynamic');
@@ -36,9 +36,9 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
             if (navCountNumber > 0) {
-                alert('board update successfully')
+                alert('board update successfully !! Say Shohanur')
                 if (i === allCompleteBtn.length - 1) {
-                    alert('Congratulation !!!!You have complete all the current task')
+                    alert('Congratulation !!!!You have complete all the current task Shohanur')
                 }
             }
             else {
